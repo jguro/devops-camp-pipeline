@@ -89,8 +89,8 @@ pipeline {
 	post {
 		cleanup {
 			echo "Clean workspace"
-			sh 'docker system prune -f' 
-			sh 'rm -rf .git ./*'
+				sh 'docker system prune -f' 
+				sh 'rm -rf .git ./*'
 		}
 	}
 }
